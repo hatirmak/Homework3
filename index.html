@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js\script.js" defer=""></script>
+    <link rel="stylesheet" href="styles\style_1.css" />
+    <title> Fizz Buzz! </title>
+  </head>
+  <body>
+    <main id="container" class="navContainer">
+      <div id="topHeader">
+        <h3>
+          Homework 3: Javascript Group Project by Hatice Irmakli & Daniela Bracamonte & Navid Hosseinipour.
+        </h3>
+      </div>
+      <div id=paragraph>
+        <p>
+          What is FizzBuzz? It is a popular game played among small kids, which helps them learn division. 
+          Print Fizz if the number is divisible by 3.
+          Print Buzz if the number is divisible by 5.
+          Print FizzBuzz if the number is divisible by both 3 and 5.
+          Print the number if the number is not divisible by 3 and 5.
+        </p>
+      </div>
+      <div id="valueBox">
+        <h3>Start number :</h3>
+        <input id="startValue" type="number" value="1" />
+        <h3>End number :</h3>
+        <input id="endValue" type="number" value="100" />
+        <h3>Fizz :</h3>
+        <input id="fizzValue" type="number" value="3" />
+        <h3>Buzz :</h3>
+        <input id="buzzValue" type="number" value="5" />
+      </div>
+      <div id="colorBox">
+        <h3>Fizz color :</h3>
+        <input id="fizzColor" type="color" value="#d47ed4" />
+        <h3>Buzz color :</h3>
+        <input id="buzzColor" type="color" value="#ca4747" />
+        <h3>FizzBuzz color :</h3>
+        <input id="fizzBuzzColor" type="color" value="#e49606" />
+        <h3>None color :</h3>
+        <input id="noneColor" type="color" value="#39bfc9" />
+        <img class="logo" src="img/logo.svg" alt="FizzBuzz Game ">
+      </div>
+
+      <div id="sizeBox">
+       <div class="sliders">
+          <input type="number" min="10" max="90" value="90" placeholder="number" id="elWidth" name ="widthLabel">
+              <div class="sliderLabel">
+                <p>Width : <span id="elWidthOutput"></span></p>
+              </div>
+        </div>
+       <div class="sliders">
+          <input type="number" min="10" max="90" value="90" placeholder="number" id="elHeight" name="heightLabel">
+              <div class="sliderLabel">
+                <p>Height : <span id="elHeightOutput"></span></p>
+              </div>
+        </div>
+      </div>
+
+      <div id="menuBox">
+        <button type="submit" id="generate">Default Settings</button
+        ><br />
+        <button type="submit" id="clear">Clear Everything</button><br />
+        <button type="submit" id="generate2">Create Customized Game</button
+        ><br />
+      </div>
+      <div id="elements">
+        <div class="Num" id="element1"></div>
+        <div class="Num" id="element2"></div>
+        <div class="Fizz" id="element3"></div>
+        <div class="Num" id="element4"></div>
+        <div class="Buzz" id="element5"></div>
+        <div class="Fizz" id="element6"></div>
+        <div class="Num" id="element7"></div>
+        <div class="Num" id="element8"></div>
+        <div class="Fizz" id="element9"></div>
+        <div class="Buzz" id="element10"></div>
+        <div class="Num" id="element11"></div>
+        <div class="Fizz" id="element12"></div>
+        <div class="Num" id="element13"></div>
+        <div class="Num" id="element14"></div>
+        <div class="FizzBuzz" id="element15"></div>
+        <div class="Num" id="element16"></div>
+        <div class="Num" id="element17"></div>
+        <div class="Fizz" id="element18"></div>
+        <div class="Num" id="element19"></div>
+        <div class="Buzz" id="element20"></div>
+        <div class="Fizz" id="element21"></div>
+        <div class="Num" id="element22"></div>
+        <div class="Num" id="element23"></div>
+        <div class="Fizz" id="element24"></div>
+        <div class="Buzz" id="element25"></div>
+        <div class="Num" id="element26"></div>
+        <div class="Fizz" id="element27"></div>
+        <div class="Num" id="element28"></div>
+        <div class="Num" id="element29"></div>
+        <div class="FizzBuzz" id="element30"></div>
+        <div class="Num" id="element31"></div>
+        <div class="Num" id="element32"></div>
+        <div class="Fizz" id="element33"></div>
+        <div class="Num" id="element34"></div>
+        <div class="Buzz" id="element35"></div>
+        <div class="Fizz" id="element36"></div>
+        <div class="Num" id="element37"></div>
+        <div class="Num" id="element38"></div>
+        <div class="Fizz" id="element39"></div>
+        <div class="Buzz" id="element40"></div>
+        <div class="Num" id="element41"></div>
+        <div class="Fizz" id="element42"></div>
+        <div class="Num" id="element43"></div>
+        <div class="Num" id="element44"></div>
+        <div class="FizzBuzz" id="element45"></div>
+        <div class="Num" id="element46"></div>
+        <div class="Num" id="element47"></div>
+        <div class="Fizz" id="element48"></div>
+        <div class="Num" id="element49"></div>
+        <div class="Buzz" id="element50"></div>
+        <div class="Fizz" id="element51"></div>
+        <div class="Num" id="element52"></div>
+        <div class="Num" id="element53"></div>
+        <div class="Fizz" id="element54"></div>
+        <div class="Buzz" id="element55"></div>
+        <div class="Num" id="element56"></div>
+        <div class="Fizz" id="element57"></div>
+        <div class="Num" id="element58"></div>
+        <div class="Num" id="element59"></div>
+        <div class="FizzBuzz" id="element60"></div>
+        <div class="Num" id="element61"></div>
+        <div class="Num" id="element62"></div>
+        <div class="Fizz" id="element63"></div>
+        <div class="Num" id="element64"></div>
+        <div class="Buzz" id="element65"></div>
+        <div class="Fizz" id="element66"></div>
+        <div class="Num" id="element67"></div>
+        <div class="Num" id="element68"></div>
+        <div class="Fizz" id="element69"></div>
+        <div class="Buzz" id="element70"></div>
+        <div class="Num" id="element71"></div>
+        <div class="Fizz" id="element72"></div>
+        <div class="Num" id="element73"></div>
+        <div class="Num" id="element74"></div>
+        <div class="FizzBuzz" id="element75"></div>
+        <div class="Num" id="element76"></div>
+        <div class="Num" id="element77"></div>
+        <div class="Fizz" id="element78"></div>
+        <div class="Num" id="element79"></div>
+        <div class="Buzz" id="element80"></div>
+        <div class="Fizz" id="element81"></div>
+        <div class="Num" id="element82"></div>
+        <div class="Num" id="element83"></div>
+        <div class="Fizz" id="element84"></div>
+        <div class="Buzz" id="element85"></div>
+        <div class="Num" id="element86"></div>
+        <div class="Fizz" id="element87"></div>
+        <div class="Num" id="element88"></div>
+        <div class="Num" id="element89"></div>
+        <div class="FizzBuzz" id="element90"></div>
+        <div class="Num" id="element91"></div>
+        <div class="Num" id="element92"></div>
+        <div class="Fizz" id="element93"></div>
+        <div class="Num" id="element94"></div>
+        <div class="Buzz" id="element95"></div>
+        <div class="Fizz" id="element96"></div>
+        <div class="Num" id="element97"></div>
+        <div class="Num" id="element98"></div>
+        <div class="Fizz" id="element99"></div>
+        <div class="Buzz" id="element100"></div>
+      </div>
+    </main>
+  </body>
+</html>
